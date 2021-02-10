@@ -1,10 +1,10 @@
 # Mutate, overwrite Array elements
 
 # replacing element:
-european_countires = %w[Portugal, Spain, France, Poland, Russia, Germany, Norway, Finland, Estonia]
+european_countires = %w[Portugal Spain France Poland Russia Germany Norway Finland Estonia]
 
 european_countires[5] = "Denmark"
-p european_countires # ["Portugal,", "Spain,", "France,", "Poland,", "Russia,", "Denmark", "Norway,", "Finland,", "Estonia"]
+p european_countires # ["Portugal", "Spain", "France", "Poland", "Russia", "Denmark", "Norway", "Finland", "Estonia"]
 
 
 # We can replace 1 element with the index position or if we want multiple elements to be replaced using the range or the sequential methods:

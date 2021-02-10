@@ -3,11 +3,11 @@
 # The Shovel operator has this symbol << and the element/elements will be added into the end of an array. 
 # The .insert method is more flexible, it takes 2 arguments (index position, element/elements).
 
-places = %w[House, Office, Airport, Tube, Coffee Shop,]
+places = %w[House Office Airport Tube Coffee Shop]
 
 # .push
 places.push("Saloon")
-p places # ["House,", "Office,", "Airport,", "Tube,", "Coffee", "Shop,", "Saloon"]
+p places # ["House", "Office", "Airport", "Tube", "Coffee", "Shop", "Saloon"]
 
 # Shovel Operator
 
