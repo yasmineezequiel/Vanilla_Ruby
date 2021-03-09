@@ -1,0 +1,4 @@
+This is the first line
+This is the second line
+This is the third line
+puts is better to be used as it does a new line with this content
