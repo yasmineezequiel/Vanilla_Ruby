@@ -1,44 +1,54 @@
-# Ruby has a built-in shortcut accessor method available for setter/getter/writer.
-# It reduces a lot the ammount of code-lines DRY
+# Ruby has a built-in shortcut accessor method available for setter/writer and getter/reader.
 
-# attr_accessor :username # method for setter and getter 
-# attr_reader :product_number # method for getter only
-# attr_writer :password # method for set only
+# attr_accessor # method for setter/witer and getter/reader 
+# attr_reader  # method for getter/reader
+# attr_writer # method for setter/writer
 
 # example:
-class Gadget
-  attr_accessor :username 
-  # The above attr_accessor is replacing this two methods (getter/setter) methods behind the scenes:
-  # def username
-  #   @username
+class Cars
+  attr_accessor :model, :color
+  # The above attr_accessor is replacing this two methods (reader/writer):
+
+  # reader
+  # def model
+  #   @model
   # end
-  # def username=(new_username)
-  #   @username = new_username
+
+  # writer
+  # def model=(model)
+  #   @model = model
   # end
-  attr_reader :product_number
-  # The above attr_reader is replacing this getter method behind the scenes:
-  # def product_number
-  #   @product_number
+
+  attr_reader :plate
+  # The above attr_reader is replacing this getter method:
+
+  # reader
+  # def plate
+  #   @plate
   # end 
-  attr_writer :password
-  # The above attr_writer is replacing this writer method behind the scenes:
-  # def password=(new_password)
-  #   @password = new_password
+
+  attr_writer :chassis
+  # The above attr_writer is replacing this writer method:
+
+  # writer
+  # def chassis=(chassis)
+  #   @chassis = chassis
   # end
 
   def initialize
-    @username = "User #{rand(1..100)}"
-    @password = "topsecret"
-    @product_number = "#{("a".."z").to_a.sample}-#{rand(1..100)}"
+    @model = "BMW"
+    @color = "Red"
+    @plate = "#{("a".."z").to_a.sample}-#{rand(1..100)}"
+    @chassis = "topsecret"
   end
 
   def to_s
-    "Gadget #{@product_number} has the username #{@username} and the password #{@password}"
+    "Cars #{@plate} has the model #{@model} and the color #{@color}"
   end
 end
 
-a = Gadget.new
-p a.username # "User 27"
-p a.product_number # "m-38"
-p a.username = "Yasmine" # "Yasmine"
-p a.password # there is no getter method for password for security so an error returns
+a = Cars.new
+p a.model # "BMW"
+p a.color # "Red"
+p a.plate # "ramdon"
+p a.chassis # there is no getter method for chassis so for security error returns

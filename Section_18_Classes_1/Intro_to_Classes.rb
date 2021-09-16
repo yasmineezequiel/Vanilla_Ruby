@@ -4,12 +4,12 @@
 # Why do we need classes?
 # - To help us to gain functionality and work with the programming tool.
 # - To recreate real life programs such as invoices, bank, etc...
-#- The goal of object-oriented design is to use code to model real-life things as classes.
-#- An object is a custom container for data. It is made from a class.
-#- Object group functionalities into a single unit.
+# - The goal of object-oriented design is to use code to model real-life things as classes.
+# - An object is a custom container for data. It is made from a class.
+# - Object group functionalities into a single unit.
 
 # Object Attributes and Methods:
-# Instance variables(attributes) are variables that belong to the object
+# Instance variables(attributes) are variables that belong to the object.
 # Attributes provide information about the object's current state.
 # Instance methods interact with the object. They also belong to the object.
 # Encapsulation is a OOP concept that restricts direct access to an object.

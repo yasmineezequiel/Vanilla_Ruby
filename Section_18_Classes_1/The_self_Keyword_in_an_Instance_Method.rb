@@ -1,6 +1,4 @@
-# The self keyword in an instance method
-# Within the instance method body the self keyword will refer to the current object.
-# it referes to the variable that holds the new object
+# Within the instance method body the self keyword will refer to the current object Book.
 
 class Book
   def initialize(author)

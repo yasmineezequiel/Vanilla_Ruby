@@ -1,5 +1,5 @@
 # Object Aliases 
-# Each new object created has a uniq object_id stored in our computer memory.
+# Each new object created has a uniq object_id stored in the computer memory.
 # if we set a variable to be equal to an existing object now they will share the same object_id. ex:
 
 class Car

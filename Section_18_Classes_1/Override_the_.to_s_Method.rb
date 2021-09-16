@@ -1,4 +1,5 @@
 # Override the .to_s method
+# By inheritance the to_s built-in method will be overwriten 
 
 class Map
   def initialize

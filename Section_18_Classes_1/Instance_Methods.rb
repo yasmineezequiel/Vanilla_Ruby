@@ -1,6 +1,6 @@
 # Instance methods belong exclusively to an object of a class.
 # Instance methods need an object in order to function. The object is called the receiver because it receives the method call.
-# is like going to a store and ask the staff for info. The staff will ask "info of what?" info needs to be of something (like an object in this case).
+# is like going to a store and ask the staff for information. The staff will ask "information of what?" information needs to be of something (like an object in this case).
 
 class Gadget 
   def initialize 
@@ -23,7 +23,6 @@ puts phone.info # object.instance_method
 puts laptop.info # object.instance_method
 # Gadget o-38 has the username User 9
 
-p phone.methods.sort # info will now appear as an available method of phone:
-p phone.methods - Object.methods # this will display the methods that are exclusively to the phone, eliminating all the Object default methods
-# [:info]
+p phone.methods.sort # info will now appear as one of the many available method of phone (object):
+p phone.methods - Object.methods # [:info]
 p phone.respond_to?(:info) # true
